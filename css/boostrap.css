@@ -1,0 +1,36 @@
+body{
+    color: brown;
+}
+
+.sreden{
+    background-color: red;
+}
+
+.form-control{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.numberSelect select{
+    background-color: #e9ecef;
+    width: 100px !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: red;
+}
+
+.btn-zelen{
+    background-color: green;
+    border-color: green;
+}
+
+.btn-zelen:hover{
+    background-color: rgb(3, 94, 3);
+    border-color: green;
+}
+
+/* .form-control  - za input polinja */
+/* .form-label - za labeli */
+/* .form-text - za pomoshen tekst */
+/* .form-select - za select elementi (dropdowns) */
+    

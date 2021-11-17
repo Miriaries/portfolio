@@ -1,0 +1,292 @@
+@keyframes mainTitleFade {
+  0%   {opacity: 0; margin-top: 50px;}
+  100% {opacity: 1; margin-top: 20px;}
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 20px;
+    z-index: 10;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+.logo svg, .logo .logoMeta{
+    float: left;
+}
+
+.logo svg{
+    margin-right: 15px;
+}
+
+.menu .name{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.menu .title{
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.menu .menuButton{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 7px;
+    float: right;
+}
+
+.menu .menuIcon{
+    font-size: 25px;
+    float: right;
+    margin-left: 5px;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero .designerImage{
+    width: 100%;
+    filter: drop-shadow(24px 24px 20px #f7f7f7);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+.hero .personImage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.hero .heroInfo{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    padding-right: 40%;
+}
+
+.mainSubtitle{
+    font-weight: 400;
+    letter-spacing: .4em;
+    color: #878a8f;
+}
+
+.mainTitle{
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    margin: 20px 0;
+}
+
+.hero .heroInfo .hero_3{
+    font-size: 22px;
+    color: #878a8f;
+    margin-bottom: 20px;
+}
+
+.hero .heroInfo .hero_4 a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    padding-bottom: 3px;
+}
+
+.hero .heroInfo .hero_4 a:hover{
+    border-bottom: 2px solid black;
+}
+
+.contact{
+    color: white;
+    background-color: #0f141e4d;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 50px;  
+    left: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.projects{
+    margin-top: 120px;
+}
+
+.projects .col-lg{
+    margin-bottom: 30px;
+}
+
+.project{
+    background-color: black;
+    padding: 40px;
+    height: 80vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+
+.project.darkText .mainTitle{
+    color: black;
+}
+
+.project .backgroundOverlay{
+    background-color: #0f141ee6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+/* Gorjan fix this! */
+.project .projectMetadata{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px 70px 40px 40px;
+}
+
+.project:hover .backgroundOverlay, .project:hover .viewCaseStudy{
+    opacity: 1;
+}
+
+.project:hover .newCircle{
+    border-color: white;
+}
+
+.project:hover .mainTitle{
+  animation-name: mainTitleFade;
+  animation-duration: 0.4s;
+  color: white
+}
+
+.caseStudies{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.project .mainTitle{
+    font-size: 36px;
+    line-height: 40px;
+    color: white;
+}
+
+.project .viewCaseStudy{
+    color: rgb(112, 112, 112);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.project .newCircle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 11px;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 700;
+    color: white;
+    background-color: #0f141ee6;
+    border: 3px solid white;
+    border-color: transparent;
+    transition: border-color 0.4s;
+}
+
+
+.letsWorkTogether{
+    text-align: center;
+    margin: 200px auto;
+}
+
+.footer{
+    margin: 200px auto;
+}
+
+.footer h4{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footerText{
+    color: #878a8f;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer a:hover{
+    border-bottom-width: 2px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .contact{
+        display: none;
+    }
+
+    .hero .heroInfo{
+        padding-right: 10px;
+    }
+
+    .hero .designerImage{
+        display: none;
+    }
+
+    .mainTitle{
+        font-size: 36px;
+        line-height: 38px;
+        margin: 11px 0;
+    }
+
+    .hero .heroInfo .hero_3{
+        font-size: 18px;
+    }   
+
+    .hero .personImage{
+        top: 80px;
+        height: 60%;
+    }
+
+    .menu{
+        padding: 25px 0px;
+        background-color: #fffffff2;
+    }
+}
